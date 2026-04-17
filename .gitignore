@@ -1,0 +1,36 @@
+# Large artifacts and model outputs — regeneratable, kept locally only
+artifacts.zip
+artifacts/models/
+artifacts/features/
+artifacts/train_tabular.parquet
+external/PI1M_v2.csv
+
+# Large binary/array formats
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.h5
+*.hdf5
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+kaggle.json
+*.pem
+*.key

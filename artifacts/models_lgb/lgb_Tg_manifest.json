@@ -1,0 +1,30 @@
+{
+  "target": "Tg",
+  "folds_used": 4,
+  "cv_mae": 92.10739671502093,
+  "label_count": 511,
+  "models": [
+    "artifacts/models_lgb/lgb_Tg_fold1.pkl",
+    "artifacts/models_lgb/lgb_Tg_fold2.pkl",
+    "artifacts/models_lgb/lgb_Tg_fold3.pkl",
+    "artifacts/models_lgb/lgb_Tg_fold4.pkl"
+  ],
+  "params": {
+    "objective": "mae",
+    "learning_rate": 0.03,
+    "num_leaves": 127,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "min_data_in_leaf": 200,
+    "lambda_l2": 1.0,
+    "max_depth": -1,
+    "n_estimators": 10000,
+    "random_state": 42
+  },
+  "guardrails": {
+    "MIN_TR": 300,
+    "MIN_VA": 80,
+    "EARLY_STOP": 300
+  }
+}
