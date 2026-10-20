@@ -34,3 +34,8 @@ venv/
 kaggle.json
 *.pem
 *.key
+
+# Data (download from Kaggle / original sources; see README)
+competition/
+external/
+phase1.html
